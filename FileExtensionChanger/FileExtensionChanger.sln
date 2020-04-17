@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileExtensionChanger", "FileExtensionChanger\FileExtensionChanger.csproj", "{FE4DC633-CCFB-45BC-83A3-863F0C64AA79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileExtensionChanger", "FileExtensionChanger\FileExtensionChanger.csproj", "{FE4DC633-CCFB-45BC-83A3-863F0C64AA79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileExtensionChangerTests", "FileExtensionChangerTests\FileExtensionChangerTests.csproj", "{897D3983-8B4D-40A7-B1E5-1E6518A96C6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FE4DC633-CCFB-45BC-83A3-863F0C64AA79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE4DC633-CCFB-45BC-83A3-863F0C64AA79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE4DC633-CCFB-45BC-83A3-863F0C64AA79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{897D3983-8B4D-40A7-B1E5-1E6518A96C6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{897D3983-8B4D-40A7-B1E5-1E6518A96C6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{897D3983-8B4D-40A7-B1E5-1E6518A96C6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{897D3983-8B4D-40A7-B1E5-1E6518A96C6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

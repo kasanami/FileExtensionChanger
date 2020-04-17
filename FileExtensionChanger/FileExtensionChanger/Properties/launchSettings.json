@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FileExtensionChanger": {
+      "commandName": "Project",
+      "commandLineArgs": "Z:\\Develop\\Projects\\FileExtensionChanger\\TestFile"
+    }
+  }
+}
