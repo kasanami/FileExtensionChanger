@@ -79,6 +79,7 @@ namespace FileExtensionChanger
         {
             using (var stream = new FileStream(path, FileMode.Open))
             {
+                // TODO:とりあえず32バイト
                 var buffer = new byte[32];
                 var length = stream.Read(buffer);
                 if (length == 0)
