@@ -26,24 +26,8 @@ namespace FileExtensionChanger.Checker
                 return false;
             }
             // SOI スタートマーカ(Start of Image) 0xFFD8
-            if (buffer[0] != 0xFF || buffer[1] != 0xD8)
-            {
-                return false;
-            }
-            // JFIFフォーマット APP0 (0xFFE0)
-            if (buffer[2] == 0xFF && buffer[3] == 0xE0)
-            {
-                var slicedBuffer = buffer.Slice(6, JFIF.Length);
-                return slicedBuffer.SequenceEqual(JFIF);
-            }
-            // カラープロファイル APP2 (0xFFE2)
-            if (buffer[2] == 0xFF && buffer[3] == 0xE2)
-            {
-                var slicedBuffer = buffer.Slice(6, ICC_PROFILE.Length);
-                return slicedBuffer.SequenceEqual(ICC_PROFILE);
-            }
-            // JPEGファイルじゃないor未対応のJPEGファイル
-            return false;
+            // に加え、次にマーカー(0xFF) があればjpegと判断する。
+            return buffer[0] == 0xFF && buffer[1] == 0xD8 && buffer[2] == 0xFF;
         }
     }
 }
